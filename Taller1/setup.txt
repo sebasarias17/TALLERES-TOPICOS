@@ -1,0 +1,48 @@
+SEBASTIAN ARIAS USMA
+
+STELLARCO WEBPAGE (REVIEWS):
+
+-Crear la base de datos ('review') en el .env.
+
+-Hacer los cambios en el archivo de configuración del proyecto .env 
+('DB_DATABASE=review')
+
+-hacer la migración con el comando -> php artisan migrate
+
+-Inicializar la app con el comando -> php artisan serve
+
+-Ingresar a la vista principal -> http://127.0.0.1:8000/
+
+-Ingresar a la vista de products -> http://127.0.0.1:8000/products
+
+-Ingresar a un producto dando en el botón negro con el nombre del producto 
+Ej 'FalconHeavy'
+
+-Ingresar a reviews dando click en el boton inferior llamado -> 'Reviews'
+--> Podemos ver que no tenemos ninguna review.
+
+-Ingresar al apartado create en la barra de navegacion arriba a la derecha en 
+el apartado 'Create a Review'.
+
+-Ingresamos los datos en los campos y lo enviamos en el botón 'Send'
+-->(Si los campos estan vacios sacará un error).
+
+-Nos devolvemos desde la barra de navegacion a productos con 'Products'.
+
+-Ingresamos a un producto dando en el botón negro con el nombre del producto 
+Ej 'FalconHeavy'.
+
+-Ingresar a reviews dando click en el boton inferior llamado -> 'Reviews'
+
+-Podemos ver que se creo nuestra review y se listarán las demas si creamos mas 
+reviews.
+
+-Ingresamos a 'Open Review' y veremos la informacion de la review.
+
+-Le damos al botón 'DELETE' para eliminar nuestro comentario.
+
+-Nos debera llevar al .../review y no se mostrará la review que acabamos de borrar.
+
+
+
+
