@@ -1,4 +1,4 @@
-const nea = require('./models/neas-model');
+const nea = require('../models/neasModel');
 
 const nea1 = new nea(1, 'Yedinson', 1.70, 'Hurto sin arma blanca','./img/nea1.png', 'Estoy mas aburrido que un pescao en un tetero');
 const nea2 = new nea(2, 'Ferney', 1.50, 'Aliento venenoso de marimba', './img/nea2.png', 'Chilla más que un costalao de pollos');
