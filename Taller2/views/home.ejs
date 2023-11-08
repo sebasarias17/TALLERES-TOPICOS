@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nea Cards</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="card-container">
+    <div class="card-header">
+      <span class="nea-type">PREMIUM</span>
+      <h1 class="nea-name"><%= nea.nombre %></h1>
+      <span class="nea-altura"><%= nea.altura %></span>
+    </div>
+    <img class="nea-image" src="<%= nea.imagen %>" alt="<%= nea.nombre %>">
+    <div class="nea-abilities">
+      <h2 class="ability-name">Habilidad: <%= nea.habilidad %></h2>
+      <p class="ability-desc"><%= nea.habilidad.descripcion %></p>
+    </div>
+    <div class="card-footer">
+      <p class="nea-info"><%= nea.fraseFilosofica %></p>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  width: 350px; /* Ajusta el ancho al tamaño de tu imagen o preferencia */
+  font-family: 'Verdana', sans-serif;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.card-header {
+  background-color: #fdd835; /* Color de fondo del encabezado de la tarjeta */
+  color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nea-type {
+  font-size: 12px;
+}
+
+.nea-name {
+  font-size: 22px;
+  margin: 0;
+}
+
+.nea-hp {
+  font-size: 18px;
+}
+
+.nea-image {
+  width: 100%;
+}
+
+.nea-abilities {
+  background-color: #f0f0f0;
+}
+
+.ability-name {
+  font-size: 18px;
+}
+
+.ability-desc {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-footer {
+  background-color: #fdd835; /* Color de fondo del pie de la tarjeta */
+  padding: 15px;
+  font-size: 15px;
+}
+
+.nea-info {
+  color: #333;
+  margin: 0;
+}
+
+.ability-name {
+  font-size: 18px; 
+  color: hsl(0, 0%, 20%);
+  display: inline-block; 
+  font-weight: bold; 
+}
+
