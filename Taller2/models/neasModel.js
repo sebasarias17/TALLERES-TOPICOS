@@ -1,3 +1,5 @@
+const os = require("os");
+
 class nea {
     constructor(id, nombre, altura, habilidad, imagen, fraseFilosofica) {
       this.id = id;
@@ -6,6 +8,7 @@ class nea {
       this.habilidad = habilidad;
       this.imagen = imagen;
       this.fraseFilosofica = fraseFilosofica;
+      this.containerId= os.hostname();
     }
   
     mostrarInformacion() {

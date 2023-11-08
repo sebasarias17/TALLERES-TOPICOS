@@ -16,6 +16,7 @@ const neasJson = (req, res) => {
     Nombre: neaSeleccionada.nombre,
     Altura: neaSeleccionada.altura,
     Habilidad: neaSeleccionada.habilidad,
+    ContainerID: neaSeleccionada.containerId,
   };
   res.json(informacion);
 };
