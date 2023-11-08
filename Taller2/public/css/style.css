@@ -1,18 +1,37 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+/* Colores y fuentes básicos */
+:root {
+  --background-color: #f4f4f4;
+  --background-header: #fdd835;
+  --text: #333;
+  --color-red: #FF0000;
+  --color-azul: #3b4cca;
+}
+
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center;
+  height: 100vh; */
+  height: auto; /* Cambiar esto de 100vh a auto */
+}
+.flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /* Altura completa para centrar verticalmente */
+  width: 100%; /* Asegurarse que ocupe el ancho completo */
 }
 
 .card-container {
-  width: 350px; /* Ajusta el ancho al tamaño de tu imagen o preferencia */
-  font-family: 'Verdana', sans-serif;
+  width: 350px;
+  font-family: 'Space Mono', monospace;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   overflow: hidden;
@@ -20,9 +39,19 @@ body {
   text-align: center;
 }
 
+/* .card-container {
+  width: 350px; 
+  font-family: 'Space Mono', monospace;  
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+} */
+
 .card-header {
-  background-color: #fdd835; /* Color de fondo del encabezado de la tarjeta */
-  color: #333;
+  background-color: var(--background-header); /* Color de fondo del encabezado de la tarjeta */
+  color: var(--text);
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -60,13 +89,13 @@ body {
 }
 
 .card-footer {
-  background-color: #fdd835; /* Color de fondo del pie de la tarjeta */
+  background-color: var(--background-header);; /* Color de fondo del pie de la tarjeta */
   padding: 15px;
   font-size: 15px;
 }
 
 .nea-info {
-  color: #333;
+  color: var(--text);
   margin: 0;
 }
 
@@ -77,3 +106,71 @@ body {
   font-weight: bold; 
 }
 
+/* HOME */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-header); /* Un azul que se asemeje al color de Pokémon */
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.home-header {
+  margin-bottom: 2rem;
+}
+
+.home-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-azul); 
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.start-button {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: var(--color-red); 
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  color: white;
+  box-shadow: 0 4px 0 #c40000; /* Un efecto de sombra para dar profundidad */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  background: #c40000; /* Un rojo más oscuro al pasar el mouse */
+  box-shadow: 0 2px 0 #900000;
+}
+
+.home-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 0.8rem;
+}
+
+/* Podemos agregar animaciones para darle vida al diseño */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+.start-button {
+  animation: bounce 2s infinite;
+}

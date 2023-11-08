@@ -5,10 +5,10 @@ const home = (req, res) => {
   res.render('home');
 };
 
-const showNea = (req, res) => {
+const show = (req, res) => {
   const indiceAleatorio = Math.floor(Math.random() * nea.length);
   const neaSeleccionada = nea[indiceAleatorio];
-  res.render('showNea', { nea: neaSeleccionada });
+  res.render('show', { nea: neaSeleccionada });
 };
 
 const neasJson = (req, res) => {
@@ -27,6 +27,6 @@ const neasJson = (req, res) => {
 
 module.exports = {
   home,
-  showNea,
+  show,
   neasJson,
 };
