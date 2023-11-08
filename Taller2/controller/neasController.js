@@ -1,4 +1,4 @@
-const nea = require("../../database/factory/neasFactory");
+const nea = require("../database/factory/neasFactory");
 const os = require("os");
 
 const home = (req, res) => {

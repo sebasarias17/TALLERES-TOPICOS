@@ -1,7 +1,8 @@
-app.get("/home", function (req, res) {
-  res.render("home"); 
-});
+const express = require('express')
+const router = express.Router();
+const neasController = require('../controller/neasController');
 
-app.get("/neasJson", function (req, res) {
-  res.render("neasJson");
-});
+router.get('/', neasController.home);
+router.get('/neaJson', neasController.neasJson);
+
+module.exports = router;
